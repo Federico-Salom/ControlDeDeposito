@@ -133,6 +133,7 @@ main {
 
 .index__main__flex {
   width: auto;
+  height: 800px;
   background-image: url("../recursos/images/fondo1.jpg");
   background-repeat: no-repeat;
   display: flex;
@@ -238,7 +239,7 @@ main {
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif, "Regular 400";
   margin: 40px 0px 40px 0px;
-  height: auto;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -296,7 +297,7 @@ main {
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif, "Regular 400";
   margin: 40px 0px 40px 0px;
-  height: auto;
+  height: 7 0vh;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -309,7 +310,7 @@ main {
 .herYmat__form__title {
   margin: 25px 0px 0px 0px;
   font-family: "Montserrat", sans-serif, "Regular 400";
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .herYmat__form__stock {
