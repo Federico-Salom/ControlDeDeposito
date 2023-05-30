@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,200&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../recursos/images/favicon.ico"/>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Herramientas y Materiales</title>
+</head>
+<body>
+    <header>
+
+        <!-- Logo y marca -->
+
+        <div class="header__flex">
+            <a href="./index.html" class="header__logo__link"><img src="../recursos/images/logoAGP.png" alt="logo" class="header__logo"></a>
+            <span class="header__marca">AGP Inventario De Mantenimiento</span>
+        </div>
+
+
+        <nav>
+            <!-- Area de navegacion -->
+
+            <ul class="nav__flex">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./registros.html">Registros</a></li>
+                <li><a href="./stock.html">Stock</a></li>
+                <li><a href="./herYmat.html" class="bold">Herramientas y Materiales</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="herYmat__main__flex">
+        <form class="herYmat__form__bajada" action="#" method="post">
+            <h2 class="herYmat__form__title">Retirar Herramientas o Insumos</h2>
+            <select class="herYmat__main__select__sede" name="pais">
+                <option hidden>Selecione La Sede</option>
+                <option value="TGE">Taller General</option>
+                <option value="ZAP">Zap</option>
+                <option value="FER">Ferri</option>
+                <option value="PLA">Plaza</option>
+            </select>
+            <div class="herYmat__main__datosUsuario">
+                <input class="herYmat__main__input__nombre" type="text" placeholder=" Ingrese su nombre completo" name="name">
+                <input class="herYmat__main__input__legajo" type="number" placeholder=" Ingrese su numero de legajo" name="legajo">
+                <input class="herYmat__main__input__fecha" type="date" name="fecha">
+                <input class="herYmat__main__input__herNombre" type="text" placeholder=" Ingrese el nombre de la herramienta que necesita" name="herNombre">
+                <input class="herYmat__main__input__herTipo" type="text" placeholder=" Ingrese el tipo de herramienta" name="herTipo">
+                <input class="herYmat__main__input__cantidad" type="text" placeholder=" Ingrese la cantidad que necesita" name="cantidad">
+                <input class="herYmat__main__input__tiempoUso" type="text" placeholder=" Ingrese el tiempo estimado de uso de las mismas" name="tiempoUso">
+            </div>
+        <div class="herYmat__main__botones">
+            <input class="herYmat__main__enviar" type="submit">
+            <input class="herYmat__main__restablecer" type="reset">
+        </div>
+        </form>
+        <form class="herYmat__form__subida" action="#" method="post">
+            <h2 class="herYmat__form__title">Ingresar Herramientas o Insumos</h2>
+            <select class="herYmat__main__select__sede" name="pais">
+                <option hidden>Selecione La Sede</option>
+                <option value="TGE">Taller General</option>
+                <option value="ZAP">Zap</option>
+                <option value="FER">Ferri</option>
+                <option value="PLA">Plaza</option>
+            </select>
+            <div class="herYmat__main__datosUsuario">
+                <input class="herYmat__main__input__nombre" type="text" placeholder=" Ingrese su nombre completo" name="name">
+                <input class="herYmat__main__input__legajo" type="number" placeholder=" Ingrese su numero de legajo" name="legajo">
+                <input class="herYmat__main__input__fecha" type="date" name="fecha">
+                <input class="herYmat__main__input__herNombre" type="text" placeholder=" Ingrese el nombre de la herramienta" name="herNombre">
+                <input class="herYmat__main__input__herTipo" type="text" placeholder=" Ingrese el tipo de herramienta" name="herTipo">
+                <input class="herYmat__main__input__cantidad" type="text" placeholder=" Ingrese la cantidad" name="cantidad">
+            </div>
+        <div class="herYmat__main__botones">
+            <input class="herYmat__main__enviar" type="submit">
+            <input class="herYmat__main__restablecer" type="reset">
+        </div>
+        </form>
+    </main>
+    <aside class="herYmat__aside__flex">
+        <form class="herYmat__form__stock" action="#" method="post">
+            <h2 class="herYmat__form__title">Control de stock</h2>
+            <div class="herYmat__aside__datosUsuario">
+                <input class="herYmat__aside__input__nombre" type="text" placeholder=" Ingrese el nombre de la herramienta que necesita" name="herNombre">
+                <input class="herYmat__aside__input__tipo" type="text" placeholder=" Ingrese el tipo de herramienta" name="herTipo">
+                <input class="herYmat__aside__input__cantidad" type="text" placeholder=" Ingrese la cantidad" name="cantidad">
+            </div>
+        <div class="herYmat__aside__botones">
+            <input class="herYmat__aside__enviar" type="submit">
+            <input class="herYmat__aside__restablecer" type="reset">
+        </div>
+        </form>
+    </aside>
+    <footer class="footer">
+        <div class="footer__border"></div>
+        <div class="footer__flex">
+            <div><h3 class="footer__title">Contactos de ayuda</h3></div>
+            <div class="footer__flex__div">
+                <a href="mailto:soporte@agpse.gob.ar" target="_blank"><div class="footer__div__soporte"><h3>soporte@agpse.gob.ar</h3></div></a>
+                <a href="mailto:mantenimiento@agpse.gob.ar" target="_blank"><div class="footer__div__mantenimiento"><h3>mantenimiento@agpse.gob.ar</h3></div></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

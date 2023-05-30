@@ -1,0 +1,85 @@
+.index__main__flex {
+    width: auto;
+    background-image: url("../recursos/images/fondo1.jpg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.index__main__section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 0px 0px 20px 0px;
+    margin: 30px 0px 0px 0px;
+    width: 70vw;
+    height: auto;
+    background-color:aliceblue;
+}
+.index__main__section__titulo {
+    text-align: center;
+    padding: 20px 0px 12px 0px;
+    font-family: 'Montserrat', sans-serif, "Regular 400";
+}
+.index__main__aside__titulo {
+    text-align: center;
+    padding: 0px 0px 12px 0px;
+    font-family: 'Montserrat', sans-serif, "Regular 400";
+}
+.index__main__aside__titulo2 {
+    text-align: center;
+    padding: 0px 0px 12px 0px;
+    font-family: 'Montserrat', sans-serif, "Regular 400";
+}
+.index__main__titulo{
+    text-align: center;
+    padding: 0px 0px 12px 0px;
+    font-family: 'Montserrat', sans-serif, "Regular 400";
+}
+.index__main__section__parrafo{
+    padding: 0px 0px 15px 0px;
+    width: 70%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif, "Extra light 200 Italic";
+    font-weight: 200;
+}
+.index__main__aside{
+    display: flex;
+    flex-direction: row;
+    width: 65vw;
+    margin: 20px 0px 0px 0px;
+}
+.index__main__aside__parrafo {
+    border-radius: 15px;
+    padding: 20px 20px 15px 20px;
+    margin: 0px 20px 0px 20px;
+    width: 50%;
+    height: auto;
+    background-color:aliceblue;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif, "Extra light 200 Italic";
+    font-weight: 200;
+}
+.index__main__aside__parrafo2 {
+    border-radius: 15px;
+    padding: 20px 20px 15px 20px;
+    margin: 0px 20px 0px 20px;
+    width: 50%;
+    height: auto;
+    background-color:aliceblue;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif, "Extra light 200 Italic";
+    font-weight: 200;
+}
+.index__main__parrafo {
+    border-radius: 15px;
+    padding: 15px 20px 15px 20px;
+    margin: 20px 20px 40px 20px;
+    width: 40vw;
+    height: auto;
+    background-color:aliceblue;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif, "Extra light 200 Italic";
+    font-weight: 200;
+}
