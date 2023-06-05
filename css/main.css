@@ -3,12 +3,19 @@
   padding: 0px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(216, 252, 255, 0.345);
+  height: 100vh;
+}
+
 .bold {
   font-weight: bold;
 }
 
 .header__marca {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 2rem;
   margin: 0px 0px 0px 0px;
   font-family: "Montserrat", sans-serif, "Regular 200";
@@ -23,7 +30,7 @@
 }
 .nav__flex li :hover {
   color: rgb(29, 0, 0);
-  box-shadow: 0 4px 16px rgb(93, 168, 248);
+  box-shadow: 0 4px 16px rgb(16, 131, 255);
   transition: all 0.2s ease;
 }
 .nav__flex li :active {
@@ -36,33 +43,33 @@
   color: black;
   text-decoration: none;
   padding: 5px;
-  border: 2px solid #47BAEC;
+  border: 2px solid #fbfeff;
   background-color: white;
 }
 
 header {
   display: flex;
-  background-color: #47BAEC;
-  height: 100%;
+  background-color: rgb(71, 186, 236);
+  height: auto;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
 }
 
 nav {
-  background-color: rgb(217, 244, 254);
+  background-color: rgb(71, 186, 236);
   font-size: 1.3rem;
   height: 7vh;
+  width: 50vw;
   font-family: "Montserrat", sans-serif, "Regular 400";
 }
 
 main {
-  height: 75vh;
+  height: 100%;
 }
 
 .footer {
-  background: linear-gradient(white, #e7fcff);
-  margin: 30px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,13 +134,11 @@ main {
 }
 
 .footer__border {
-  border-top: 1px solid black;
   width: 100%;
 }
 
 .index__main__flex {
-  width: auto;
-  height: 800px;
+  background-position: -100px -330px;
   background-image: url("../recursos/images/fondo1.jpg");
   background-repeat: no-repeat;
   display: flex;
@@ -147,7 +152,7 @@ main {
   flex-direction: column;
   border-radius: 15px;
   padding: 0px 0px 20px 0px;
-  margin: 30px 0px 0px 0px;
+  margin: 100px 0px 0px 0px;
   width: 70vw;
   height: auto;
   background-color: aliceblue;
@@ -161,19 +166,11 @@ main {
 
 .index__main__aside__titulo {
   text-align: center;
-  padding: 0px 0px 12px 0px;
   font-family: "Montserrat", sans-serif, "Regular 400";
 }
 
 .index__main__aside__titulo2 {
   text-align: center;
-  padding: 0px 0px 12px 0px;
-  font-family: "Montserrat", sans-serif, "Regular 400";
-}
-
-.index__main__titulo {
-  text-align: center;
-  padding: 0px 0px 12px 0px;
   font-family: "Montserrat", sans-serif, "Regular 400";
 }
 
@@ -203,6 +200,9 @@ main {
   font-family: "Montserrat", sans-serif, "Extra light 200 Italic";
   font-weight: 200;
 }
+.index__main__aside__parrafo p {
+  margin: 15px 0px 15px 0px;
+}
 
 .index__main__aside__parrafo2 {
   border-radius: 15px;
@@ -215,17 +215,8 @@ main {
   font-family: "Montserrat", sans-serif, "Extra light 200 Italic";
   font-weight: 200;
 }
-
-.index__main__parrafo {
-  border-radius: 15px;
-  padding: 15px 20px 15px 20px;
-  margin: 20px 20px 40px 20px;
-  width: 40vw;
-  height: auto;
-  background-color: aliceblue;
-  text-align: center;
-  font-family: "Montserrat", sans-serif, "Extra light 200 Italic";
-  font-weight: 200;
+.index__main__aside__parrafo2 p {
+  margin: 15px 0px 15px 0px;
 }
 
 .herYmat__main__flex {
@@ -375,33 +366,29 @@ main {
 }
 
 .registros__table {
-  background-color: rgb(246, 254, 255);
   text-align: center;
-  border: solid 2px black;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
 }
+.registros__table tr:nth-child(odd) {
+  background: rgb(197, 237, 255);
+}
+.registros__table tr:nth-child(even) {
+  background: rgb(162, 227, 255);
+}
 .registros__table tr th {
+  background: rgb(141, 221, 255);
   text-align: center;
   font-family: "Montserrat", sans-serif, "Regular 400";
   font-size: 1.2rem;
-  border: black solid 1px;
-  padding: 2px 10px 2px 10px;
+  padding: 10px 10px 10px 10px;
+  border-bottom: solid 2px black;
 }
 .registros__table tr td {
   text-align: center;
   font-family: "Montserrat", sans-serif, "Regular 200";
-  border: black solid 1px;
-  padding: 2px 10px 2px 10px;
-  font-size: 1.1rem;
-}
-
-#__table__contenido {
-  text-align: center;
-  font-family: "Montserrat", sans-serif, "Regular 200";
-  border: black solid 1px;
-  padding: 2px 10px 2px 10px;
+  padding: 8px 10px 8px 10px;
   font-size: 1.1rem;
 }
 
@@ -412,32 +399,28 @@ main {
 }
 
 .stock__table {
-  background-color: rgb(246, 254, 255);
   text-align: center;
-  border: solid 2px black;
   border-collapse: collapse;
   margin-left: auto;
   margin-right: auto;
 }
+.stock__table tr:nth-child(odd) {
+  background: rgb(197, 237, 255);
+}
+.stock__table tr:nth-child(even) {
+  background: rgb(162, 227, 255);
+}
 .stock__table tr th {
+  background: rgb(141, 221, 255);
   text-align: center;
   font-family: "Montserrat", sans-serif, "Regular 400";
   font-size: 1.2rem;
-  border: black solid 1px;
-  padding: 2px 10px 2px 10px;
+  padding: 10px 10px 10px 10px;
+  border-bottom: solid 2px black;
 }
 .stock__table tr td {
   text-align: center;
   font-family: "Montserrat", sans-serif, "Regular 200";
-  border: black solid 1px;
-  padding: 2px 10px 2px 10px;
-  font-size: 1.1rem;
-}
-
-#stock__table__contenido {
-  text-align: center;
-  font-family: "Montserrat", sans-serif, "Regular 200";
-  border: black solid 1px;
-  padding: 2px 10px 2px 10px;
+  padding: 8px 10px 8px 10px;
   font-size: 1.1rem;
 }/*# sourceMappingURL=main.css.map */
